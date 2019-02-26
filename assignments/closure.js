@@ -1,6 +1,25 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
 
+function myFunction() {
+  console.log(`This is my function`)
+  const firstMessage = 'this day has been tough';
+
+
+    function myNextFunction() {
+      console.log(`This is my Next Function and ${firstMessage}`)
+      const secondMessage = 'No really it has been super tough'
+
+        function myFinalFunction() {
+          console.log(`This is the very last function but I can honestly say, ${firstMessage}, ${secondMessage}, seriously.`)
+
+        }
+        myFinalFunction();
+    }
+    myNextFunction();
+}
+myFunction();
+
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
