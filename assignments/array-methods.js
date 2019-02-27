@@ -103,10 +103,24 @@ let smallShirt = [];
 smallShirt = runners.filter((element) => {
   return element.shirt_size === 'S'
 })
-
 console.log(smallShirt);
 
-
 // Problem 2
+// We need to email jodie as quickly as possible!
+
+let emailQuick = [];
+emailQuick = runners.filter((element) => {
+  return element.first_name === "Jodie"
+})
+
+console.log(emailQuick)
 
 // Problem 3
+// lets contact our big donars!
+
+let bigBucks = [];
+bigBucks = runners.filter((element)=>{
+  return element.donation > 200;
+})
+
+console.log(bigBucks);
